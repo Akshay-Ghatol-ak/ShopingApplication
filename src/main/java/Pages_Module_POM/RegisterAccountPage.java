@@ -33,40 +33,28 @@ private WebElement userClickOnAccountButton;
 
     @FindBy(xpath ="//*[@id='input-firstname']")
     private WebElement UserFirstName;
-    public  void EnterFirstName(String  FirstName){
-       UserFirstName.sendKeys(FirstName);
-
-
-    }
-
     @FindBy(xpath = "//*[@id='input-lastname']")
     private WebElement UserLastName;
-    public void EnterLastName(String LastName){
-        UserLastName.sendKeys(LastName);
-
-
-    }
 
     @FindBy(xpath = "//*[@id='input-email']")
     private WebElement UserEmail;
-    public void EnterUserEmail(String Email){
-        UserEmail.sendKeys(Email);
-    }
-
-
     @FindBy(xpath = "//*[@id='input-telephone']")
     private WebElement UsertelephoneNumber;
-    public void EnterTelephoneNumber(String Telephone){
-        UsertelephoneNumber.sendKeys(Telephone);
-    }
 
     @FindBy(xpath = "//*[@id='input-password']")
     private WebElement UserPassword;
-    public void EnterPassword(String Password){
-        UserPassword.sendKeys(Password);
+
+    public  void UserInformation (String  FirstName, String LastName, String Email ,String Telephone ) {
+       UserFirstName.sendKeys(FirstName);
+       UserLastName.sendKeys(LastName);
+        UserEmail.sendKeys(Email);
+        UsertelephoneNumber.sendKeys(Telephone);
+        //UserPassword.sendKeys(Password);
+
     }
-
-
+public  void EnterPassword(String Password){
+    UserPassword.sendKeys(Password);
+}
     @FindBy(xpath = "//*[@id='input-confirm']")
     private WebElement UserConfirmPassword;
     public void EnterConfirmPassword(String PasswordConfirm ){

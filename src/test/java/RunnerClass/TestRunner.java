@@ -2,6 +2,7 @@ package RunnerClass;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
         features = "src/test/resources/Features",
@@ -9,4 +10,9 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
+ //   @Override
+  //  @DataProvider(parallel = true)   // ✅ Enable parallel execution
+   // public Object[][] scenarios() {
+    //    return super.scenarios();
+   // }
 }

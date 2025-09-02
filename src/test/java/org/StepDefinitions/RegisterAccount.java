@@ -16,25 +16,17 @@ public class RegisterAccount {
     public void click_on_register_account_button() throws InterruptedException {
         driver = DataFactory.getDriver();
         AK2 = new RegisterAccountPage(driver);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         AK2.ClickOnAccountButton();
+        Thread.sleep(2000);
         AK2.ClickOnRegiterButton();
 
     }
 
     @Then("User enters all persanal details {string},{string},{string}, {string} ,{string}, {string}")
     public void user_enters_all_persanal_details_$ert43210_test_test(String FirstName, String LastName, String Email, String TelePhone, String Password, String PasswordConfirm) throws InterruptedException {
-        AK2.EnterFirstName(FirstName);
-
-        Thread.sleep(1000);
-        AK2.EnterLastName(LastName);
-
-        Thread.sleep(1000);
-        AK2.EnterUserEmail(Email);
-
-        Thread.sleep(1000);
-        AK2.EnterTelephoneNumber(TelePhone);
-
+        AK2.UserInformation(FirstName,LastName,Email,TelePhone);
+        Thread.sleep(2000);
 
         if (Password.equals(PasswordConfirm)) {
             Thread.sleep(1000);
@@ -44,7 +36,7 @@ public class RegisterAccount {
             AK2.EnterConfirmPassword(PasswordConfirm);
         } else if (!Password.equals(PasswordConfirm)) {
             AK2.EnterPassword(Password);
-            System.out.println("Akshay");
+           // System.out.println("Akshay");
             // String ActualResultConfirmMessage=AK2.ConfirmeMessagenotMachPassword();
             // Assert.assertTrue(ActualResultConfirmMessage.contains("Password confirmation does not match password!"));
         }
@@ -108,6 +100,10 @@ public class RegisterAccount {
                 } catch (Exception e3) {
                     String agreeMessage = AK2.ErrorMesssageDisplayAgreeCheckBox();
                     Assert.assertTrue(agreeMessage.contains("Warning: You must agree to the Privacy Policy!"));
+
+                }
+                finally {
+                    System.out.println("All_Ready_Used_email_or_ResitedMail");
 
                 }
             }
