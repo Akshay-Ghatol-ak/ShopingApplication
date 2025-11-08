@@ -1,11 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="D:/java_intellij_Folder/Real_Time_Project" thread-count="5">
-        <classes>
-            <class name="RunnerClass.TestRunner"/>
-        </classes>
-    </test>
-</suite>
-
-
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="D:/java_intellij_Folder/Real_Time_Project"><classes/></test></suite>

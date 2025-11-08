@@ -16,20 +16,27 @@ public loginPage(WebDriver driver){
 
 }
 
-    @FindBy(xpath="//*[@id='authUser']")
+@FindBy(xpath = "//*[text()='Login']")
+private WebElement ClickOnLogin;
+public void UserClickonLoginButton(){
+    ClickOnLogin.click();
+}
+
+
+    @FindBy(xpath="//*[@id='input-email']")
     private WebElement UserName;
-    public void EnterUserName(String username) {
-        UserName.sendKeys(username);
+    public void EnterUserName(String EmailAddress) {
+        UserName.sendKeys(EmailAddress);
     }
 
 
-    @FindBy(xpath="//*[@id='clearPass']")
-    private WebElement Password;
-    public void EnterPassword(String password) {
-        Password.sendKeys(password);
+    @FindBy(xpath="//*[@id='input-password']")
+    private WebElement USerPassword;
+    public void EnterPassword(String Password) {
+        USerPassword.sendKeys(Password);
     }
 
-@FindBy(xpath = "//*[@id='login-button']")
+@FindBy(xpath = "//*[@value='Login']")
     private WebElement LoginButton;
     public void ClickOnLoginButton(){
         LoginButton.click();
