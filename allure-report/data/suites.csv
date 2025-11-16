@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","71623","Verify User  Register the Account for E-Commerce Shopping Application","","Sat Sep 06 00:55:43 IST 2025","passed","Sat Sep 06 00:56:55 IST 2025","","E-Commerce Shopping Application","Verify User  Register the Account for E-Commerce Shopping Application",""
-"","52086","Verify User  Register the Account for E-Commerce Shopping Application","","Sun Nov 02 21:35:53 IST 2025","broken","Sun Nov 02 21:36:45 IST 2025","","E-Commerce Shopping Application","Verify User  Register the Account for E-Commerce Shopping Application",""
-"","3199","Verify user enter valid and invalid credential for  E-Commerce Shopping application","","Sun Nov 02 21:36:45 IST 2025","broken","Sun Nov 02 21:36:48 IST 2025","","E-Commerce Shopping Application","Verify user enter valid and invalid credential for  E-Commerce Shopping application",""

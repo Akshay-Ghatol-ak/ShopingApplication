@@ -36,7 +36,8 @@ public void open_the_browser() throws InterruptedException {
       Ak1.EnterUserName(EmailAddress);
        Ak1.EnterPassword(Password);
        Ak1.ClickOnLoginButton();
-       //Ak1.ClickOnLoginButton();
+       //
+       // Ak1.ClickOnLoginButton();
    }
 
 @When("Log out the application")
