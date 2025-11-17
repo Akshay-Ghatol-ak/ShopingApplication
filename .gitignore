@@ -3,6 +3,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 allure-report/
+/allure-results/
+ShopingApplication/
+
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

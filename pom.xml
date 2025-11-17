@@ -46,7 +46,7 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- ✅ Allure for Cucumber 7 -->
+    <!-- Allure for Cucumber 7 -->
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-cucumber7-jvm</artifactId>
@@ -68,6 +68,12 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
+        <configuration>
+          <!-- Add TestNG XML -->
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
       </plugin>
 
       <!-- Allure Maven plugin -->

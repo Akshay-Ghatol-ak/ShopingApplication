@@ -8,6 +8,6 @@ Feature: E-Commerce Shopping Application
     When Click on continue button
 
     Examples:
-      | FirstName | LastName | E-Mail                   | Telephone   | Password  | PasswordConfirm | Newsletter | AgrreeButtonCheckBoxx |
-      | Akshay    | Ghatol   | akshay@testmail.com      | 9876543210  | Test@1234 | Test@1234       | Yes        | Checked               |
-      | Rahul     | Patil    | rahul.patil@mail.com     | 9123456789  | Pass@123  | Pass@123        | No         | Checked               |
+      | FirstName | LastName | E-Mail               | Telephone  | Password  | PasswordConfirm | Newsletter | AgrreeButtonCheckBoxx |
+      | Akshay 4  | Ghatol   | akshay@testmail.com  | 9876543210 | Test@1234 | Test@1234       | Yes        | Checked               |
+      | Rahul  7  | Patil    | rahul.patil@mail.com | 9123456789 | Pass@123  | Pass@123 7      | No         | Checked               |

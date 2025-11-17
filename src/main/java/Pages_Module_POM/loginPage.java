@@ -43,10 +43,6 @@ public void UserClickonLoginButton(){
     }
 
     // only Merger Demo Remove this line
-    @FindBy(xpath = "//*[@value='Login']")
-    private WebElement LoginButton1;
-    public void ClickOnLoginButton1(){
-        LoginButton.click();
-    }
+
 
 }
