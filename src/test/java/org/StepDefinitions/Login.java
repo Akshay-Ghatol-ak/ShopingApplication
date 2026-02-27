@@ -6,7 +6,12 @@ import Pages_Module_POM.loginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.commons.io.FileUtils;
+import org.aspectj.util.FileUtil;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
+
+import java.io.File;
 
 
 public class Login {
@@ -38,6 +43,9 @@ public void open_the_browser() throws InterruptedException {
        Ak1.ClickOnLoginButton();
        //
        // Ak1.ClickOnLoginButton();
+
+
+
    }
 
 @When("Log out the application")
